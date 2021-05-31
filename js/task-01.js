@@ -6,5 +6,5 @@ const categoriesArray = [...totalNavCategories]
     items => `Категория: ${items.children[0].textContent}
 Количество элементов: ${items.children[1].children.length}`
   )
-  
+  .join("\n");
 console.log(categoriesArray);
