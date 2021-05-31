@@ -16,11 +16,12 @@ const images = [
   },
 ];
 
-const imagesEl = document.querySelector('#gallery')
-imagesEl.classList.add ("photos")
+const imagesEl = document.querySelector("#gallery");
+imagesEl.setAttribute("style", "list-style:none; display: flex;  justify-content: space-between")
 
-images.forEach(image=>
-    imagesEl.insertAdjacentHTML ('afterbegin', `<li> <img src= "${image.url}"
-    alt = "${image.alt }" width = "150" height = "100" />  </li>`)
+
+images.forEach(({url,alt})=>
+    imagesEl.insertAdjacentHTML ('afterbegin', `<li> <img src= "${url}"
+    alt = "${alt }" width = "150" height = "100" />  </li>`)
 
 )
