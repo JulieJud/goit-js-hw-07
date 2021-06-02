@@ -5,11 +5,12 @@ validationInput.addEventListener('change', controlOfValidation);
 
 function controlOfValidation(event) {
     console.log(event.currentTarget.value);
-    if (event.currentTarget.value.length === inputLength) {
-
+    if (event.currentTarget.value.length == inputLength) {
+    console.log (typeof (event.currentTarget.value.length))
+     console.log(typeof(inputLength))     
     validationInput.classList.add('valid');
     validationInput.classList.remove('invalid');
-        
+       
     }
     else
     {
