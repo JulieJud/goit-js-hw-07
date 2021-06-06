@@ -29,7 +29,7 @@ function createBoxes(amount) {
     
 function destroyBoxes() {
   boxes.innerHTML = '';
-  inputElement.value = ''
+  input.value = ''
 }
 
 function random() {
