@@ -20,8 +20,8 @@ const imagesEl = document.querySelector("#gallery");
 imagesEl.setAttribute("style", "list-style:none; display: flex;  justify-content: space-between")
 
 
-images.forEach(({url,alt})=>
-    imagesEl.insertAdjacentHTML ('afterbegin', `<li> <img src= "${url}"
+const gallery=images.map(({url,alt})=>`<li> <img src= "${url}"
     alt = "${alt }" width = "150" height = "100" />  </li>`)
 
-)
+
+ imagesEl.insertAdjacentHTML('afterbegin',gallery)
