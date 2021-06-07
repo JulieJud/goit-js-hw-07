@@ -21,7 +21,7 @@ imagesEl.setAttribute("style", "list-style:none; display: flex;  justify-content
 
 
 const gallery=images.map(({url,alt})=>`<li> <img src= "${url}"
-    alt = "${alt }" width = "150" height = "100" />  </li>`)
+    alt = "${alt }" width = "150" height = "100" />  </li>`).join('')
 
 
  imagesEl.insertAdjacentHTML('afterbegin',gallery)
